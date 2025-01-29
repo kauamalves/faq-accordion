@@ -15,8 +15,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://faq-accordion-theta-swart.vercel.app/)
 
 ### Built with
 
@@ -26,7 +25,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ## Author
 
-- Website - [Add your name here](https://www.github.com/kauamalves)
+- Website - [@kauamalves](https://www.github.com/kauamalves)
 - Frontend Mentor - [@kauamalves](https://www.frontendmentor.io/profile/kauamalves)
 
 
