@@ -1,0 +1,119 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-pink);
+    font-family: 'Work Sans', serif;
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+div.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Evita cortes em telas menores */
+}
+
+div.container {
+    background-color: var(--White);
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    padding: 25px;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+
+        h1 {
+            color: var(--Dark-purple);
+            font-weight: 700;
+            margin: 0px 0 0 10px;
+            font-size: 55px;
+        }
+    }
+
+    .faq {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    details {
+        padding: 10px;
+        transition: max-height 0.3s ease-out;
+        overflow: hidden;
+    }
+
+    summary {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 1.5em;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* Remove seta padrão do details */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Ícone padrão (plus) */
+    summary::after {
+        content: "";
+        width: 1.3em;
+        height: 1.3em;
+        background-image: url("./assets/images/icon-plus.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        transition: transform 0.3s ease;
+    }
+
+    /* Ícone de "menos" quando aberto */
+    details[open] summary::after {
+        background-image: url("./assets/images/icon-minus.svg");
+        transform: rotate(180deg);
+    }
+
+    /* Adiciona animação para o conteúdo ao abrir */
+    details p {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease-out;
+    }
+
+    /* Quando `details` está aberto */
+    details[open] p {
+        opacity: 1;
+        max-height: 500px;
+        transition: opacity 0.3s ease, max-height 0.5s ease-in;
+    }
+
+    p {
+        margin-top: 3%;
+        font-size: 16px;
+        color: var(--Grayish-purple);
+    }
+}
+
+

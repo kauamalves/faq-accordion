@@ -1,0 +1,31 @@
+
+@media (max-width: 1024px) {
+    div.container {
+        width: 70%;
+    }
+
+    .title h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    div.container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+    summary {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
